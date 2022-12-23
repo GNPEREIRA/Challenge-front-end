@@ -1,0 +1,11 @@
+.main-div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+
+
+div, footer, header{
+    border: 1px solid red;
+}
