@@ -12,6 +12,7 @@ var msgCriptografada;
 var msgDescriptografada;
 let texto;
 var img;
+var texto2;
 
 function criptografa()
 {
@@ -22,17 +23,22 @@ function criptografa()
     }else{
         /* troca os termos especificados */
         msgCriptografada = n.replaceAll("a","ai").replaceAll("e","enter").replaceAll("i","imes").replaceAll("o","ober").replaceAll("u","ufat");
-        //console.log(msgCriptografada);
+        console.log(msgCriptografada);
 
         /* Esconde a imagem da id=div2 */
         img = document.getElementById("id-observador");
         img.style.display = "none";
 
-        /* Mostra a textarea com texto criptogrado na id=div2 */
+        /* Mostra a textarea com texto criptogrado na id=div2*/
+        texto2 = document.getElementById("textoCriptografado");
+        texto2.style.display = "block";
+        texto2.innerHTML = msgCriptografada;
+
+        /* Mostra a textarea com texto criptogrado na id=div2 
         const section = document.getElementById("div2")
         texto = document.createElement('textarea');
         texto.innerHTML = msgCriptografada;
-        section.appendChild(texto); 
+        section.appendChild(texto); */
 
         /* limpa texto do text area */
         var clear = document.getElementById("textarea").value = "";
@@ -45,17 +51,17 @@ function criptografa()
 
 function descriptografa()
 {
-   if(texto == undefined){
+   if(texto2 == undefined){
     alert("Criptografe algo antes!");
    }else{
     msgDescriptografada = msgCriptografada.replaceAll("ufat", "u").replaceAll("ober", "o").replaceAll("imes","i").replaceAll("enter","e").replaceAll("ai","a");
-    //console.log(msgDescriptografada);
+    console.log(msgDescriptografada);
 
     /* mostra texto textarea id=div1 */
     document.getElementById("textarea").value = msgDescriptografada;
     
     /* esconde textarea id=div2*/
-    texto.style.display = "none";
+    texto2.style.display = "none";
 
     /* mostra imagem observador id=div2 */
     img.style.display = "block";
@@ -63,7 +69,7 @@ function descriptografa()
     /* habilita botão criptografar */
     document.querySelector("button").disabled = false;
 
-    msgCriptografada = "";
+
 
    }
     

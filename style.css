@@ -1,11 +1,110 @@
+body{
+    background: #F3F5FC ;
+}
+
+.container{
+    margin: auto;
+    width: auto;
+    height: auto; 
+}
+
+textarea{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+    padding: 10px;
+}
+
+.img-logo{
+    position: relative;
+    left: 84px;
+    top: 48px;   
+}
+
 .main-div{
     display: grid;
     grid-template-columns: 60% 40%;
 }
 
+.div1{
+    margin-top: 15%;
+    margin-left: 15px;
+    margin-right: 10px;
+}
 
+#textarea{ 
+    width: 94%;
+    height: 160px;
+    left: 240px;
+    top: 168px; 
+    outline: none;
+    font-size: 20px;
+    color: #0A3871;
+    border: none;
+    border-radius: 30px;
+}
 
+.section2{
+    margin-top: 100px;
+}
 
-div, footer, header{
-    border: 1px solid red;
+button{
+    margin: 20px;
+    padding: 24px;
+   
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;  
+}
+
+#criptografar{
+    background: #0A3871;
+    color: #D8DFE8;
+    text-align: center;
+}
+
+#descriptografar{
+    border-color: 1px solid #D8DFE8;
+    color: #0A3871;
+}
+
+.img-observador {
+    
+    width: 270px;
+    height: 500px;
+    margin-left: 25%;
+    border-radius: 30px;
+}
+
+#textoCriptografado{
+    float: left;
+    margin-left: 25%;
+    width: 270px;
+    height: 490px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+    color: #0A3871;
+    display: none;
+}
+
+footer{
+    height: 53px;
+    background-color: #0A3871;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+p{
+    color: white;  
 }
